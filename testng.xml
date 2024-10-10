@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UserOpSuite">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+  <test thread-count="5" name="UserOpTest">
+    <classes>
+      <!--<class name="test.UserTests"/>-->
+     <!-- <class name="test.DataDrivenTest"/>-->
+      <class name="test.TestUsingPropFile"/>
+    </classes>
+  </test> <!-- UserOpTest -->
+</suite> <!-- UserOpSuite -->
